@@ -27,18 +27,15 @@ body{
 	padding: 20px 50px;
 	background-color: transparent;
 	border-radius: 10px;
-	border: 2px solid #c22;
+	border: 2px solid #333;
 	position: relative;
 }
 
 #input-body>div {
 	margin: 20px 0;
 }
-#input-body>div:nth-child(1){
-	margin-top: 60px;
-}
 .input-text {
-	border: 1px solid #c22;
+	border: 1px solid #333;
 	width: 260px;
 	height: 38px;
 	line-height: 38px;
@@ -47,7 +44,7 @@ body{
 
 .input-text>span:first-child {
 	margin: 0 5px 0px 10px;
-	color: #CC2222;
+	color: #333;
 	font-size: 15px;
 	font-weight: 400;
 }
@@ -59,8 +56,8 @@ body{
 	display: inline-block;
 	height: 28px;
 	width: 1px;
-	background: #c22;
-	box-shadow: 0 1px 1px 0 #c22;
+	background: #333;
+	box-shadow: 0 1px 1px 0 #333;
 }
 
 
@@ -72,7 +69,7 @@ body{
 	font-size: 15px;
 	line-height: 25px;
 	background: transparent;
-	color: #red;
+	color: #333;
 }
 
 input::-webkit-input-placeholder {
@@ -84,16 +81,23 @@ input::-webkit-input-placeholder {
 }
 
 .input-text>input:focus::-webkit-input-placeholder {
-	color: #c22;
+	color: #333;
 	opacity: 0.8;
 }
 
-#loginBtn {
+.err-text{
+	color: red;
+	font-weight: 600;
+	font-size: 18px;
+	transform: translateX(10px);
+}
+
+.loginBtn {
 	width: 150px;
 	height: 38px;
 	margin-left: 55px;
 	margin-top: 20px;
-	background-color: #c22;
+	background-color: royalblue;
 	border-radius: 5px;
 	border: none;
 	outline: none;
@@ -103,16 +107,16 @@ input::-webkit-input-placeholder {
 	transition: all 0.3s;
 }
 
-#loginBtn:hover {
+.loginBtn:hover {
 	width: 260px;
 	margin-left: 0;
-	background: #c22;
+	background: dodgerblue;
 	opacity: 1;
 	box-shadow: 0 0 10px #00438A;
 }
 
-#loginBtn:active {
-	background-color: #c22;
+.loginBtn:active {
+	background-color: dodgerblue;
 	opacity: 1;
 }
 .users-bottom-copy {
