@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>担保喜庆</title>
+		<link rel="stylesheet" type="text/css" href="easyui/easyui.css">
+		<link rel="stylesheet" type="text/css" href="easyui/icon.css">
+		<link rel="stylesheet" type="text/css" href="easyui/style.css" />
+		<script type="text/javascript" src="easyui/jquery.min.js"></script>
+		<script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+	</head>
+
+	<body class="easyui-layout">
+		<div data-options="region:'north',border:false" style="overflow: hidden;height:60px;background: url(easyui/images/bg.gif) no-repeat fixed top;">
+			<div style="margin-top: 6px;">
+				<span class="users-logo" style="">logo</span>
+				<font class="users-title" style="">XXX安全管理系统</font>
+				<div class="users-rigth-btn" style="">
+					<div class="users-head" style=""><span style="line-height: 45px">头像</span></div>
+					<div class="users-name" style="">芸享管理员</div>
+				</div>
+			</div>
+		</div>
+		<div id="west" data-options="region:'west',border:false,">
+			<div class="easyui-accordion" data-options="border:false" style="width:100%;height:100%;">
+				<div id="one" class="first" title="基础信息管理" data-options="" style="">
+					<p data-options="" onclick="addTab('车辆管理','carPage.html')"><span class="users-unClick"></span>车辆管理</p>
+					<p onclick="addTab('公司管理','')"><span class="users-unClick"></span>公司管理</p>
+					<p onclick="addTab('智能无线设备','')"><span class="users-unClick"></span>智能无线设备</p>
+					<p onclick="addTab('设备管理','')"><span class="users-unClick"></span>设备管理</p>
+				</div>
+				<div id="two" title="车辆服务" data-options="">
+					内容
+				</div>
+				<div id="three" title="预警管理" data-options="">
+					内容
+				</div>
+				<div id="four" title="风险区域管理" data-options="">
+					内容
+				</div>
+			</div>
+		</div>
+		</div>
+		<div data-options="region:'center',border:false">
+			<div id="tt" class="easyui-tabs" data-options="border:false">
+				<div title="首页" style="padding:10px">
+					<p>欢迎您，</p>
+				</div>
+			</div>
+		</div>
+		<div class="users-bottom-copy" data-options="region:'south',border:false" style="">&copy;重庆芸享实业有限公司 版权所有</div>
+	</body>
+	<script type="text/javascript">
+		function addTab(title, url) {
+			if($('#tt').tabs('exists', title)) {
+				$('#tt').tabs('select', title);
+			} else {
+				var content = '<iframe scrolling="auto" frameborder="0"  src="' + url + '" style="width:100%;height:100%;"></iframe>';
+				$('#tt').tabs('add', {
+					title: title,
+					content: content,
+					closable: true
+				});
+				$('#tt .tabs li').mouseenter(function() {
+					$(this).children().css('color', '#eee');
+				});
+				$('#tt .tabs li').mouseleave(function() {
+					$(this).children().css('color', '#eee');
+				});
+				$('.tabs .tabs-first').click(function() {
+					$('.easyui-accordion p>span').attr('class', 'users-unClick');
+				})
+			}
+		}
+		$('.easyui-accordion>div p').mouseenter(function() {
+			$(this).children().addClass('users-Hover');
+		})
+		$('.easyui-accordion>div p').mouseleave(function() {
+			$(this).children().removeClass('users-Hover');
+		})
+
+		$('.easyui-accordion>div p').click(function() {
+			$('p').children().attr('class', 'users-unClick');
+			$(this).children().attr('class', 'users-Click');
+			$('p').css('background-color', 'transparent').css('color', '#333');
+			$(this).css('background-color', 'rgba(249, 223, 223,1)').css('color', 'rgb(191, 42, 37)');
+		})
+		$("#tt").tabs({
+			fit: true,
+			onSelect: function(title, index) {
+				$('.easyui-accordion p').each(function() {
+					if(title == $(this).text()) {
+						$('.easyui-accordion p>span').attr('class', 'users-unClick');
+						$(this).children().attr('class', 'users-Click');
+						$('p').css('background-color', 'transparent').css('color', '#333');
+						$(this).css('background-color', 'rgba(249, 223, 223,1)').css('color', 'rgb(191, 42, 37)');
+					}
+					if(title == '首页') {
+						$('.easyui-accordion p>span').attr('class', 'users-unClick');
+						$('p').css('background-color', 'transparent').css('color', '#333');
+					}
+				})
+			}
+		});
+	</script>
+
+</html>

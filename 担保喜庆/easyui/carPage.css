@@ -1,0 +1,118 @@
+/* ei统一样式改变 */
+a{
+	outline: none !important;
+}
+.easyui-linkbutton{
+	width: auto;
+	color: #eee;
+	padding: 3px 10px;
+	transition: all 0.2s;
+	background: rgba(250, 133, 22, 0.6);
+}
+.easyui-linkbutton:hover{
+	width: auto;
+	color: #fff;
+	padding: 3px 18px;
+	background: orangered;
+}
+.datagrid-toolbar .l-btn-plain:hover{
+	border:none;
+}
+.input-style{
+	padding-left: 10px;
+	transition: all 0.5s;
+}
+.input-style:focus{
+	outline: none;
+	box-shadow: 0 0 8px -2px #999;
+	border-radius: 10px;
+}
+.datagrid-header,
+.datagrid-header-row{
+	height: 34px !important;
+	border: none;
+}
+.datagrid-header td, .datagrid-body td, .datagrid-footer td{
+	border-color: rgba(211, 66, 61, 0.7);
+	transition: all 0.1s;
+}
+.datagrid-header td:hover{
+	color: #fff;
+	font-weight: bold;
+}
+.datagrid-row{
+	height: 30px;
+}
+/* date-select */
+.calendar-saturday{
+	color: #CC2222;
+}
+.calendar-selected{
+	border: 0;
+	background-color:#CC2222;
+	border-radius: 50%;
+	color: #eee;
+}
+.calendar-today{
+	color: orange;
+}
+.calendar-nav-hover{
+	border-radius: 50%;border: 0;
+}
+.datebox{
+	line-height: 30px;
+}
+.datebox-button a{
+	color: #c22;
+}
+.datagrid-row-over{
+	background: rgba(215, 140, 140, 0.5);
+	color: #fff;
+}
+.datagrid-row-selected{
+	color: #eee;
+	background: rgba(215, 70, 65,0.8);
+	outline: none;
+}
+.datagrid-header-over{
+	background: rgba(215, 140, 140, 0.5) !important;
+	color: #fff;
+}
+
+/* easyui-combobox */
+.textbox,
+.textbox-addon-right>a,
+.textbox>input{
+	height: 28px !important;
+}
+.combobox-item-hover{
+	background: rgba(225, 140, 140, 0.8);
+	color: #fff;
+}
+.combobox-item-selected{
+	background: rgba(215, 70, 65,0.8);
+}
+
+/* esayui-check */
+.iradio_minimal-red + span{
+	position: relative;
+	top: 2px;
+	left: 2px;
+}
+
+/* easyui-dialog */
+.window{
+	background: linear-gradient(to bottom,rgb(247, 71, 86) 0,rgb(211, 45, 56) 20%);
+	border-color: red;
+	box-shadow: 0 0 20px 0 #999;
+}
+.window-header>.panel-title{
+	color: #fff;
+}
+.window-header .panel-tool a{
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.3);
+}
+.window-proxy-mask, .window-mask{
+	background-color: rgba(0,0,0,0.5);
+}

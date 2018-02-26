@@ -1,0 +1,205 @@
+/* easyui样式修改 */
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+iframe{
+	/*height: 99% !important;*/
+}
+.accordion .accordion-header-selected .panel-title {
+	color: #333;
+}
+.easyui-accordion>div{
+	border-top: 1px solid rgb(222, 212, 212);
+}
+.easyui-accordion>div>div{
+	overflow:auto;padding: 0 10px 0 10px;
+}
+#west{
+	width:240px;
+}
+
+.layout-panel-west {
+	background: url(images/left-bg.gif);
+}
+
+.layout-panel-west .panel-header {
+	padding: 10px 10px;
+	border-bottom: none;
+	border-left: 5px rgb(249, 223, 223) solid !important;
+	box-shadow: 0 1px 2px 0px #ccc;
+}
+.accordion .accordion-header-selected{
+	background-color: rgb(249, 223, 223);
+}
+
+.layout-panel-west .easyui-accordion {
+	background-color: transparent;
+}
+
+.layout-panel-west .easyui-accordion p{
+	transition: all 0.3s; 
+	width: 90%;
+	margin: 1px;
+	padding-top: 4px;
+	padding-left: 10px;
+	line-height: 30px;
+	cursor: pointer;
+	border-radius: 0px;
+	font-size: 14px;
+	border-bottom: 1px #ccc dashed;
+}
+.layout-panel-west .easyui-accordion p:hover{
+	color: red;
+	font-weight: 400;
+	transform: translateX(14px);
+	background: rgba(249, 223, 223,0.6) !important;
+	box-shadow: 0 2px 1px #aaa;
+	border-radius: 5px;
+	width: 75%;
+	border-bottom: 0 #ccc dashed;
+}
+
+.layout-panel-west .panel-body {
+	border: none;
+	background: transparent;
+}
+
+.layout-panel-west .accordion-header {
+	transition: all 0.3s;
+	border-left: 5px rgb(249, 223, 223) solid !important;
+}
+.layout-panel-west .accordion-header:hover{
+	border-left: 5px rgb(191, 42, 37) solid !important;
+}
+
+.layout-panel-west .accordion-header-selected {
+	border-left: 5px rgb(191, 42, 37) solid !important;
+}
+
+.layout-panel-west .panel-tool {
+	right: 12px;
+}
+
+.layout-panel-west span.users-Hover {
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	background: rgb(191, 42, 37) !important;
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-right: 5px;
+}
+.layout-panel-west span.users-Click {
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	background: rgb(191, 42, 37);
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-right: 5px;
+}
+
+.layout-panel-west span.users-unClick {
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	background: #686767;
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-right: 5px;
+}
+.tabs{
+	border-bottom: 1px solid rgb(222, 78, 73);
+}
+#tt .tabs li{
+	height: 26px;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	background: linear-gradient(rgba(225, 65, 62, 0.5), rgba(195, 47, 42, 0.8));
+}
+#tt .tabs li a {
+	color: #eee;
+	border-bottom: none;
+}
+#tt .tabs-header {
+	background: rgb(249, 223, 223);
+}
+#tt .panel-body{
+	overflow: hidden;
+}
+#tt .tabs-selected>a:nth-child(1) {
+	background: linear-gradient(rgb(240, 99, 94), #BF2A25);
+	color: #eee !important;
+	border: 1px solid transparent;
+	border-bottom: none;
+	border-top: 1px solid rgb(240, 99, 94);
+}
+
+#tt .tabs li a.tabs-close {
+	background: url(images/tabs_icons.png) no-repeat -34px center;
+}
+
+#tt .tabs li a.tabs-inner:hover{
+	background-color:transparent;
+}
+#tt .tabs>li:hover {
+	border-radius: 5px 5px 0 0;
+	background: linear-gradient(rgb(240, 99, 94), #BF2A25);
+}
+
+/* 用户自定义样式 */
+
+.users-logo {
+	float: left;
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	background: #9f9f9f;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+.users-title {
+	height: 45px;
+	line-height: 45px;
+	font-size: 18px;
+	margin-left: 10px;
+	color: #eee;
+}
+
+.users-rigth-btn {
+	float: right;
+	position: relative;
+	right: 20px;
+}
+
+.users-head {
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	text-align: center;
+	background: #999;
+	border-radius: 50%;
+	margin: 0px 10px 0 0
+}
+
+.users-name {
+	float: right;
+	height: 45px;
+	display: inline-block;
+	line-height: 45px;
+	font-size: 14px;
+	color: #eee;
+}
+
+.users-bottom-copy {
+	color: #eee;
+	font-size: 13px;
+	line-height: 25px;
+	text-align: center;
+	background: linear-gradient(rgba(199, 93, 55, 0.9), rgb(193, 62, 44));
+}
